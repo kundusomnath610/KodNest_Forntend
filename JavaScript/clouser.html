@@ -1,0 +1,34 @@
+<script>
+
+function counter() {
+    count = 0;
+    return {
+        increse: () => console.log("Count is: " , count++),
+
+        decrese: () => console.log("Count drecrese: ", count--),
+
+        reset: () => {
+            count = 0;
+            console.log("Count is: " , count);
+        },
+    };
+}
+
+var ref = counter();
+ref.increse();
+ref.increse();
+ref.increse();
+ref.increse();
+ref.decrese();
+ref.reset();
+
+
+
+</script>
+
+<!--
+
+    A Clouser is a function in JS that remembers the variables from it surrounding scope
+    even after the scope finished the excution
+
+-->

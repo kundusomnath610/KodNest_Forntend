@@ -1,0 +1,17 @@
+<body>
+
+    <ul id="unli"></ul>
+    <input id="task" placeholder="Enter The Task"/>
+    <button onclick="collectData(event)"> Add Task</button>
+
+</body>
+
+<script>
+
+    var target = document.getElementById("unli");
+    console.log(target)
+    var newele = document.createElement("li");
+    newele.textContent = "Item";
+    target.appendChild(newele);
+
+</script>

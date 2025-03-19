@@ -1,0 +1,21 @@
+<script>
+
+function progress(fun) {
+    console.log(fun);
+    console.log("Somnath");
+    console.log(fun);
+}
+
+progress((name) => console.log("Name is: " , name));
+
+function processMul(mul) {
+    mul(10, 20)
+}
+progress((a, b) => console.log(a * b));
+
+// <!--
+//     Higher Order function is  function this accept another function as an arguments, such function 
+    // called higher order function.
+// -->
+
+</script>

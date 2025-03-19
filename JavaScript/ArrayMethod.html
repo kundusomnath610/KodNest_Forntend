@@ -1,0 +1,67 @@
+<script>
+
+
+    let arr = [10, 20, 30, 40, 50];
+    console.log("Initial Array:", arr);
+    arr.push(60);
+    console.log("After push:", arr); // [10,20,30,40,50,60]
+  
+    arr.unshift(5);
+    console.log("After unshift:", arr); //[5,10,20,30,40,50,60]
+  
+    arr.pop();
+    console.log("After pop:", arr); //[5,10,20,30,40,50]
+  
+    arr.shift();
+    console.log("After shift:", arr); //[10,20,30,40,50]
+  
+    arr[1] = 200;
+    console.log("After replacing ele:", arr); //[10,200,30,40,50]
+    arr1 = [100, 200, 300, 400, 500, 600];
+    console.log("Initial arr1:", arr1);
+    let deleted_ele = arr1.splice(2, 3, 900, 800);
+    console.log(deleted_ele); //[300, 400, 500]
+    console.log("After splice arr1:", arr1); //[100, 200, 900, 800, 600]
+    li = ["H", "M", "A", "C"];
+    del = li.splice(1, 2, "D");
+    console.log(del); //['M','A']
+    console.log(li); // ['H','D','C']
+    numbers = [99, 98, 97, 96, 95, 94];
+    sb_list = numbers.slice(1, 4);
+    console.log(sb_list); //[98, 97, 96]
+    console.log(numbers); //[99, 98, 97, 96, 95, 94]
+
+
+    arr = [10, 20, 30];
+    arr.forEach((ele, idx, ar) => {
+        console.log(ele, idx, ar);
+    });
+
+
+  </script>
+
+
+/*
+
+    1.push():Adds ele at the end of an array.
+
+    2.unshift(): Adds ele at 0th index.
+
+    3.pop():Removes last ele
+
+    4.shift():Removes first(0th index) ele.
+
+    5.splice(start index, delete count, elements to be added):
+    splice returns deleted elements.
+
+    6.slice(start index, end index-1):Creates sub array 
+    (Does not change original array)
+
+    7.indexOf(ele): Returns index of specific ele.
+
+    8.includes(ele):Checks, if an element present in array or not:
+    Returns either true or false.
+
+    9.sort(): Sort the elements in alphabetical order.
+
+*/

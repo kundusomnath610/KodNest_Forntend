@@ -1,0 +1,32 @@
+<script>
+    function mul() {
+        if (arguments == 0) {
+            return 0;
+        } else if (arguments == 1) {
+            return arguments[0];
+        } else {
+            var product = 1;
+
+            for(i = 0; i < arguments.length; i++) {
+                product = product * arguments[i];
+            }
+            return product
+        }
+    }
+
+        console.log("Multiplication: " , mul());
+        console.log("Multiplication: " , mul(10));
+        console.log("Multiplication: " , mul(10, 20));
+        console.log("Multiplication: " , mul(10, 20, 30, 40));
+
+
+</script>
+
+
+<!--
+
+Arguments object don't support filter map etc.
+Arguments object don't support Array Function.
+Arguments object don't support 
+
+-->

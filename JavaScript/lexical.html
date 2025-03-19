@@ -1,0 +1,20 @@
+<script>
+
+    var global = 100;
+    //console.log(out);
+    //console.log(inn);
+
+    function outer() {
+        var out = 200;
+        console.log(global);
+
+        function inner () {
+            var inn = 300;
+            console.log(global);
+            console.log(out);
+        }
+        inner();
+    } 
+    outer();
+
+</script>

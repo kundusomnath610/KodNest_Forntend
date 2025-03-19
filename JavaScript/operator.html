@@ -1,0 +1,51 @@
+<script>
+
+    console.log("Somnath");
+    console.log("Somnath");
+    console.log("Somnath");
+    console.log("Somnath");
+
+
+    function add1 (a, b) {
+        console.log(a + b);
+    }
+    add1(500 , 600);
+    console.log(add1);
+
+
+    /*
+        function expression
+    */
+
+    let add = function(a , b) {
+        console.log(a + b);
+    }
+    add(10,20);
+        console.log(add);
+
+
+    /* 
+        Arrow function
+    */
+
+    let mul = (x , y) => {
+        return x * y;
+    }
+    console.log(mul(20,30));
+
+
+    /* Java Script Arrow function*/
+    const isEven = (number) => number % 2 == 0;
+    console.log(isEven(10));
+
+
+    /* with out Arrow Function */
+    const even = (num) => {
+        if (num % 2 == 0) {
+            return true;
+        }
+    };
+    console.log(even(10));
+
+
+</script>

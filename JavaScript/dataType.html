@@ -1,0 +1,71 @@
+<script>
+    console.log(10, typeof 10); // Number
+    console.log(22.44, typeof 22.44); // Number
+    console.log("code" , typeof "code"); // String
+    console.log("K", typeof "K"); // Char
+    console.log(true , typeof true); // Boolean
+    console.log(null, typeof null); // null Value
+
+    var a;
+    console.log(a);
+
+    // Object: JSON, Function, Array
+    let s1 = {
+        name : 'AK',
+        age : 22,
+
+        study: () => console.log("Study function"),
+        mark: 45,
+    };
+    console.log(s1, typeof s1);
+    console.log(s1);
+    console.log(s1.name);
+    console.log(s1.age);
+    console.log(s1.mark);
+    s1.study();
+
+    let arr = [10,20,30,40];
+    console.log(arr, typeof arr);
+
+
+    function identityData(value) {
+        if (value == null) return "null";
+        if (Array.isArray(value)) return "Array";
+        return typeof value;
+    }
+
+    // Odd even systex..
+    let odd = (num) => num % 2 == 0
+    console.log(odd(11));
+
+    let even_odd = (num) => {
+        if (num % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    console.log(even_odd(13));
+
+
+    // JSON Format
+    let person = {
+        name: "PK",
+        age: "20",
+        mark: [60, 85],
+
+        exprience: {
+            ABC : 2,
+            CODE: 4,
+        },
+        study: () => console.log("Person is studying"),
+        run: () => console.log("Person is running"),
+        avg: () => console.log(60 + 85 / 2),
+    };
+
+    person.study();
+    person.run();
+    person.avg();
+
+</script>

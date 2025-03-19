@@ -1,0 +1,34 @@
+<script>
+
+    // add(10, 20);
+
+    // function add (a, b) {
+    //     var z = 200;
+    //     console.log(a + b + z);
+    // }
+    // console.log(add);
+
+/*  JavaScript is not support Function Overloading  */
+    function add(a , b) {
+        console.log(a + b);
+    }
+
+    function add (a, b, c) {
+        console.log(a + b + c);
+    }
+
+    function add () {
+        console.log(10 + 20);
+    }
+
+    function add (a, b, c, d) {
+        console.log(a + b + c + d);
+    }
+
+    add();
+    add(10, 20);
+    add(10, 20, 30);
+    add(10, 20, 30, 40);
+
+
+</script>

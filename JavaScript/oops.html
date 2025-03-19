@@ -1,0 +1,58 @@
+<script>
+
+    class ticket {
+        constructor(number, price) {
+            this.number = number;
+            this.price = price;
+        }
+
+
+    }
+
+    let t1 = new ticket("123", 300);
+    let p1 = new ticket("456", 600);
+
+    console.log(t1.number, t1.price);
+    console.log(p1.number, p1.price);
+
+    // t1.number;
+    // p1.price;
+
+    class Movie {
+        constructor(name, rate) {
+            this.name = name;
+            this.rating = rate;
+        }
+    }
+
+    let n1 = new Movie("KGF", 5);
+    let r1 = new Movie("ABC", 4);
+
+    console.log(n1.name, n1.rating);
+    console.log(r1.name, r1.rating);
+
+
+    class student {
+
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        study() {
+            console.log(this.name, " is Learning");
+        }
+
+        play() {
+            console.log(this.name , " is playing of age", this.age);
+        }
+
+    }
+
+    let s1 = new student("Pooja", 23, 55);
+    let s2 = new student("Somanth", 32, 45);
+
+    s1.study();
+    s2.play();
+
+</script>

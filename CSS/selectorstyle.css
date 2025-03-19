@@ -1,0 +1,47 @@
+/* ID selector */
+#app {
+    color: aquamarine;
+}
+
+h3 {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+/* Class selector */
+.som {
+    background-color: red;
+}
+.css {
+    color: aqua;
+    font-style: italic;
+    background-color: black;
+}
+/*Attribute Selector*/
+input[type="email"] {
+    background-color: aqua;
+
+}
+input[type="text"] {
+    background-color: aqua;
+}
+
+/* Child Selector */
+div>pre {
+    color: blue;
+    font-family: Verdana;
+    font-style: oblique;
+}
+
+/* Adjusent Sibling selector*/
+div+pre {
+    background-color: aqua;
+    text-align: center;
+}
+
+/* General Sivling Selector*/
+h3 ~ pre {
+    background-color: blueviolet;
+}
+
+/*Universe Selector */

@@ -1,0 +1,21 @@
+<script>
+
+    function outer() {
+        var name = 'Somnath';
+        var age = 20;
+
+        function inner() {
+        console.log(++outer);
+
+        function innerMost() {
+            console.log(innerMost);
+            console.log(inn);
+            console.log(out);
+        }   
+        return innerMost;
+        }
+        return inner();
+    }
+    var ref = outer();
+
+</script>

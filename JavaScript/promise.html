@@ -1,0 +1,17 @@
+<script>
+
+let p1 = new Promise((resolve, reject) => { // promise it self is a object..
+    setTimeout(() => {
+        console.log("Feacting Data...!!");
+        //resolve("12345")
+        reject("No Data")
+    }, 3000);
+});
+
+p1.then((data) => {
+    console.log("Fetched the data...!!", data);
+}).catch((msg) => {
+    console.log("Error the messge....!!")
+});
+
+</script>

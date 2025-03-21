@@ -1,0 +1,19 @@
+<script>
+
+    let p1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+        resolve();
+        }, 4000);
+    });
+
+    async function process() {
+        console.log(p1);
+        await p1;
+        console.log("Task 3 is depending on Task 2")
+    }
+    process();
+    
+
+
+
+</script>

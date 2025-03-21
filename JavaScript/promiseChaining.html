@@ -1,55 +1,49 @@
-<script>
+function placeOrder() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Order placed...!!");
+            resolve();
+        }, 4000);
+    });
+}
 
-    function placeOrder() {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                console.log("Order placed...!!");
-                resolve();
-            }, 4000);
-        });
-    }
+function setEmail() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Send Mail!!");
+            resolve();
+        }, 2000);
+    });
+}
 
-    function setEmail() {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                console.log("Send Mail!!");
-                resolve();
-            }, 2000);
-        });
-    }
+function confirmOrder() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Order Confirmed!!");
+            resolve();
+        }, 1000);
+    });
+}
 
+function makePayment() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Not enough money..");
+            reject("Payment failed due to insufficient funds!");
+        }, 1000);
+    });
+}
 
-    function confirmOrder() {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                console.log("Order Confirm!!");
-                resolve();
-            }, 1000);
-        });
-    }
+function processOrder() {
+    console.log("Process Started...!!");
 
-
-    function makePayment() {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                console.log("Payment done!!");
-                resolve();
-            }, 1000);
-        });
-    }
-
-    function processOrder() {
-        console.log("Process Started...!!");
-       
-        placeOrder()
+    placeOrder()
         .then(() => makePayment())
         .then(() => confirmOrder())
         .then(() => setEmail())
-        .then(()=> console.log("Process Ended...!!"))
-    }
-    processOrder();
+        .then(() => console.log("Process Ended...!!"))
+        .catch((msg) => console.log("Error:", msg)) // Proper error handling
+        .finally(() => console.log("Final process ended..")); // Runs no matter what
+}
 
-
-
-
-</script>
+processOrder();

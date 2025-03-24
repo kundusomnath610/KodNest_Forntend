@@ -1,0 +1,25 @@
+<body>
+    <form id="myForm">
+        <input type="text" id="name" name="fname" placeholder="Enter your name">
+        <input type="number" id="age" name="age" placeholder="Enter your age"><br><br>
+        <button type="submit" onclick="return validate()">Submit</button>
+    </form>
+</body>
+
+<script>
+    function validate() {
+        var form = document.getElementById("myForm");  // Correct form selection
+        let name = document.getElementById("name").value.trim();
+        let age = document.getElementById("age").value.trim();
+
+        if (name === "" || age === "") {
+            alert("Please enter both name and age.");
+            return false;
+        }
+
+        console.log("Name:", name, "Age:", age);
+        
+        form.reset(); // Reset form after validation
+        return false; // Prevent default form submission
+    }
+</script>

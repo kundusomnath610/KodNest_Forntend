@@ -1,0 +1,34 @@
+<body>
+
+<form>
+
+    <input type="text" id="infield">
+    <span style="color: red;">*</span>
+    <br><br>
+    <button onclick="return validate()">add data</button>
+</form>
+</body>
+
+<script>
+
+    function validate() {
+        var data = document.getElementById("infield").value;
+        if (data == '') {
+            document.getElementById('msg').textContent = "Empty Field not allowed";
+            return false;
+        }
+
+        else if(data.length > 20 || data.length < 2) {
+            document.getElementById('msg').textContent = "Min 2 and Max 20";
+            return false;
+        }
+
+        document.getElementById('msg').textContent = "*";
+        document.querySelector('from').reset();
+        alert("From got submitted");
+        return false;
+    }
+
+
+
+</script>

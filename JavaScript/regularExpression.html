@@ -1,0 +1,25 @@
+<body>
+    <form>
+    
+        <input type="text" id="infield">
+        <span style="color: red;">*</span>
+        <br><br>
+        <button onclick="return validate()">add data</button>
+    </form>
+</body>
+
+<script>
+
+function validate() {
+    var data = document.getElementById("infield").value;
+    let pettern = /^[a-zA-Z]{2, 20}$/
+
+    if(pettern.test(data)) {
+        alert("Data is saved");
+    } else {
+        alert("Data is not saved");
+    }
+}
+
+
+</script>

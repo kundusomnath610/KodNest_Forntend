@@ -3,4 +3,4 @@ function Button() {
         <button>Button Component </button>
     )
 }
-export default Button;
+export default Button; 

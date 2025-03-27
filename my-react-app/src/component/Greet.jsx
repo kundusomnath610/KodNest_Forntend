@@ -1,7 +1,17 @@
+import { useState } from "react";
+
 export default function Greet() {
-let name = "Somnath";
+let [name, setName] = useState ("Somnath");
+let toggle = true;
 const update = () => {
-    name = "Akash";
+    if(toggle) {
+        setName('Akash');
+        toggle = false;
+    } 
+    else {
+        setName('pooja');
+        toggle = true;
+    }
 }
   return (
     <div>

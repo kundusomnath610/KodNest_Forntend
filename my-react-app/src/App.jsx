@@ -1,12 +1,11 @@
-import Greeting from "./greeting";
+import Greet from "./component/Greet"
+import home from "./home"
 function App() {
-  let name = "AK"
-  let id = 101
-  return(
+  return (
     <>
-    <h1> Hello world React JS </h1>
-    <Greeting fname = {name} myid = {id}/>
+      <Home Name = "Somnath" />
     </>
   )
 }
-export default App;
+
+export default App

@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 export default function Greet() {
-let [name, setName] = useState ("Somnath");
+let [name, setName] = useState ("Somnath Kundu");
 let toggle = true;
 const update = () => {
     if(toggle) {
-        setName('Akash');
+        setName('Akash Demo Name');  
         toggle = false;
     } 
     else {

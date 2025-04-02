@@ -1,4 +1,4 @@
-import UserInfo from './components/UserInfo'
+import UserInfo from "./component/userInfo"
 export default function App() {
   return (
     <div>

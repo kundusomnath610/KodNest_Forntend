@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from "react-redux"
-import {addMoney, debitMoney} from '../Store'
+import {addMoney, debitMoney} from '../OlderStore'
 export default function UserInfo() {
     let data = useSelector(state => state.user);
     const dispatch = useDispatch();
